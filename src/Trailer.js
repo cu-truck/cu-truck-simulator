@@ -4,11 +4,11 @@ import firebase from "./firebase";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
-class Tractor extends React.Component {
+class Trailer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      tractors: []
+      trailers: []
     };
   }
 
@@ -16,14 +16,14 @@ class Tractor extends React.Component {
     const db = firebase.firestore();
     const load = db
       .collection("queue")
-      .where("type", "==", "tractor")
+      .where("type", "==", "trailer")
       .where("number", ">", 0)
       .orderBy("number")
       .orderBy("timestamp")
       .onSnapshot(querySnapshot => {
         const data = querySnapshot.docs.map(doc => doc.data());
         console.log(data);
-        this.setState({ tractors: data });
+        this.setState({ trailers: data });
       });
   }
 
@@ -35,13 +35,11 @@ class Tractor extends React.Component {
     return (
       <div className="mb-2">
         <Card>
-          <Card.Header as="h5">Tractors</Card.Header>
+          <Card.Header as="h5">Trailers</Card.Header>
           <Card.Body>
             <ListGroup variant="flush">
-              {this.state.tractors.map((cargo, i) => (
-                <ListGroup.Item key={i}>
-                  {cargo.telegram} {cargo.number}
-                </ListGroup.Item>
+              {this.state.trailers.map((trailer, i) => (
+                <ListGroup.Item key={i}>{trailer.telegram}</ListGroup.Item>
               ))}
             </ListGroup>
           </Card.Body>
@@ -51,4 +49,4 @@ class Tractor extends React.Component {
   }
 }
 
-export default Tractor;
+export default Trailer;

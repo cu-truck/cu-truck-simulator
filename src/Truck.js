@@ -1,45 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import firebase from './firebase';
+import React from "react";
+import ReactDOM from "react-dom";
+import firebase from "./firebase";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
 
 class Truck extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      queueT: [],
-      queueC: []
+      truck: []
     };
   }
 
   componentDidMount() {
     const db = firebase.firestore();
-    db.collection("queue")
-      .where("type", "==", "tractor")
-      .get()
-      .then(querySnapshot => {
+    const load = db
+      .collection("truck")
+      .orderBy("number")
+      .orderBy("timestamp")
+      .onSnapshot(querySnapshot => {
         const data = querySnapshot.docs.map(doc => doc.data());
-      console.log(data);
-      this.setState({ queueT: data });
-      })
+        console.log(data);
+        this.setState({ truck: data });
+      });
+  }
 
-      db.collection("queue")
-        .where("type", "==", "container")
-        .get()
-        .then(querySnapshot => {
-          const data = querySnapshot.docs.map(doc => doc.data());
-          this.setState({queueC: data})
-        })
-      }
+  componentWillUnmount() {
+    this.load();
+  }
 
   render() {
     return (
-      <div>
-        <div className="status">{this.props.truck.tractor}</div>
-        {this.props.truck.cargos.map((cargo, i) =>
-          <div className="board-row">
-            {cargo}
-          </div>
-        )}
+      <div className="mb-2">
+        {this.state.truck.map((truck, i) => (
+          <Card key={i} className="mb-2">
+            <Card.Header as="h5">Truck</Card.Header>
+            <Card.Body>
+              <Card.Title>Tractor @{truck.telegram}</Card.Title>
+              <ListGroup variant="flush">
+                {truck.trailers.map((trailer, j) => (
+                  <ListGroup.Item key={j}>{trailer}</ListGroup.Item>
+                ))}
+              </ListGroup>
+            </Card.Body>
+          </Card>
+        ))}
       </div>
     );
   }

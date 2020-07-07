@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59b10594d50fd8d9f9bcacd838cb2c9c",
+    "revision": "1613bddb93a718664ec8644bcbeb3706",
     "url": "/cu-truck-simulator/index.html"
   },
   {

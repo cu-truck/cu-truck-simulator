@@ -40,7 +40,7 @@ class Tractor extends React.Component {
             <ListGroup variant="flush">
               {this.state.tractors.map((cargo, i) => (
                 <ListGroup.Item key={i}>
-                  {cargo.telegram} {cargo.number}
+                  @{cargo.telegram} {cargo.number}
                 </ListGroup.Item>
               ))}
             </ListGroup>

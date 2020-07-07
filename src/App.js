@@ -15,18 +15,22 @@ function App() {
   return (
     <Container>
       <div className="title">
-        <h1 className="display-2">
-          <i>CU Truck Simulator</i>
+        <h1>
+          <i className="display-2">CU Truck Simulator </i>
+          <small>Convocation Public Beta</small>
         </h1>
       </div>
       <div className="App">
+        <h2>Register</h2>
         <TruckForm />
         <Row>
           <Col md={8}>
+            <h2>Loading Area</h2>
             <Truck />
           </Col>
           <Col md={4}>
-            <Tractor />
+            {/* <Tractor /> */}
+            <h2>Waiting Area</h2>
             <Trailer />
           </Col>
         </Row>

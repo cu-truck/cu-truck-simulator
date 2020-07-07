@@ -39,7 +39,11 @@ class Trailer extends React.Component {
           <Card.Body>
             <ListGroup variant="flush">
               {this.state.trailers.map((trailer, i) => (
-                <ListGroup.Item key={i}>{trailer.telegram}</ListGroup.Item>
+                <ListGroup.Item key={i}>
+                  <a href={"https://t.me/" + trailer.telegram}>
+                    @{trailer.telegram}
+                  </a>
+                </ListGroup.Item>
               ))}
             </ListGroup>
           </Card.Body>

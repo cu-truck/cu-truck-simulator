@@ -35,12 +35,17 @@ class Truck extends React.Component {
       <div className="mb-2">
         {this.state.truck.map((truck, i) => (
           <Card key={i} className="mb-2">
-            <Card.Header as="h5">Truck</Card.Header>
+            <Card.Header as="h5">Truck #{i + 1}</Card.Header>
             <Card.Body>
-              <Card.Title>Tractor @{truck.telegram}</Card.Title>
+              <Card.Title>
+                Tractor{" "}
+                <a href={"https://t.me/" + truck.telegram}>@{truck.telegram}</a>
+              </Card.Title>
               <ListGroup variant="flush">
                 {truck.trailers.map((trailer, j) => (
-                  <ListGroup.Item key={j}>{trailer}</ListGroup.Item>
+                  <ListGroup.Item key={j}>
+                    Trailer <a href={"https://t.me/" + trailer}>@{trailer}</a>
+                  </ListGroup.Item>
                 ))}
               </ListGroup>
             </Card.Body>

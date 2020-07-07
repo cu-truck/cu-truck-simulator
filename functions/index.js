@@ -62,15 +62,16 @@ exports.createNewTractor = functions.firestore
         .limit(1)
         .get()
         .then(querySnapshot => {
-          snap.ref.update({
-            number: 0
-          });
-          return querySnapshot.docs.map(doc =>
+          return querySnapshot.docs.map(doc => {
             doc.ref.update({
               trailers: [...doc.data().trailers, telegram],
               number: doc.data().size - 1
-            })
-          );
+            });
+
+            snap.ref.update({
+              number: 0
+            });
+          });
         });
     }
   });

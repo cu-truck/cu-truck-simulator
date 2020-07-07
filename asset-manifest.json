@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/cu-truck-simulator/static/css/main.acadef03.chunk.css",
+    "main.js": "/cu-truck-simulator/static/js/main.c392bff5.chunk.js",
+    "main.js.map": "/cu-truck-simulator/static/js/main.c392bff5.chunk.js.map",
+    "runtime-main.js": "/cu-truck-simulator/static/js/runtime-main.bb324c8c.js",
+    "runtime-main.js.map": "/cu-truck-simulator/static/js/runtime-main.bb324c8c.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/cu-truck-simulator/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.80eaa2fc.chunk.js": "/cu-truck-simulator/static/js/2.80eaa2fc.chunk.js",
+    "static/js/2.80eaa2fc.chunk.js.map": "/cu-truck-simulator/static/js/2.80eaa2fc.chunk.js.map",
+    "index.html": "/cu-truck-simulator/index.html",
+    "precache-manifest.aedcd4c8ac5c83d240f382b88edc5026.js": "/cu-truck-simulator/precache-manifest.aedcd4c8ac5c83d240f382b88edc5026.js",
+    "service-worker.js": "/cu-truck-simulator/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/cu-truck-simulator/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.acadef03.chunk.css.map": "/cu-truck-simulator/static/css/main.acadef03.chunk.css.map",
+    "static/js/2.80eaa2fc.chunk.js.LICENSE.txt": "/cu-truck-simulator/static/js/2.80eaa2fc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb324c8c.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.80eaa2fc.chunk.js",
+    "static/css/main.acadef03.chunk.css",
+    "static/js/main.c392bff5.chunk.js"
+  ]
+}

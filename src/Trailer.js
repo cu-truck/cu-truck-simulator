@@ -35,7 +35,7 @@ class Trailer extends React.Component {
     return (
       <div className="mb-2">
         <Card>
-          <Card.Header as="h5">Trailers</Card.Header>
+          <Card.Header as="h5">Trailers 車卡</Card.Header>
           <Card.Body>
             <ListGroup variant="flush">
               {this.state.trailers.map((trailer, i) => (

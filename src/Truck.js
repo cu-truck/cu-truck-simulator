@@ -38,13 +38,14 @@ class Truck extends React.Component {
             <Card.Header as="h5">Truck #{i + 1}</Card.Header>
             <Card.Body>
               <Card.Title>
-                Tractor{" "}
+                Tractor 拖頭{" "}
                 <a href={"https://t.me/" + truck.telegram}>@{truck.telegram}</a>
               </Card.Title>
               <ListGroup variant="flush">
                 {truck.trailers.map((trailer, j) => (
                   <ListGroup.Item key={j}>
-                    Trailer <a href={"https://t.me/" + trailer}>@{trailer}</a>
+                    Trailer 車卡{" "}
+                    <a href={"https://t.me/" + trailer}>@{trailer}</a>
                   </ListGroup.Item>
                 ))}
               </ListGroup>

@@ -78,8 +78,8 @@ class TruckForm extends React.Component {
               >
                 <Form.Label>I am...</Form.Label>
                 <Form.Control as="select" defaultValue="trailer">
-                  <option value="tractor">Tractor</option>
-                  <option value="trailer">Trailer</option>
+                  <option value="tractor">Tractor 拖頭</option>
+                  <option value="trailer">Trailer 車卡</option>
                 </Form.Control>
               </Form.Group>
             </Col>

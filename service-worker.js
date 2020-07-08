@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cu-truck-simulator/precache-manifest.30b0cb2db6f0ed06fd764d0cfd7becf4.js"
+  "/cu-truck-simulator/precache-manifest.21ea8b299cb3e3d457efcfcf889769e0.js"
 );
 
 self.addEventListener('message', (event) => {

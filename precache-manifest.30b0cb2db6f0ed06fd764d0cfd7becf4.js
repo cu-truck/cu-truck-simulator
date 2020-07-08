@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1613bddb93a718664ec8644bcbeb3706",
+    "revision": "6b4c135bcce1fb37e15b0c6b13db0334",
     "url": "/cu-truck-simulator/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cu-truck-simulator/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "71f66e889b7a8e158aee",
+    "revision": "c33bc3579d6c507a3b4a",
     "url": "/cu-truck-simulator/static/css/main.acadef03.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cu-truck-simulator/static/js/2.80eaa2fc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71f66e889b7a8e158aee",
-    "url": "/cu-truck-simulator/static/js/main.c392bff5.chunk.js"
+    "revision": "c33bc3579d6c507a3b4a",
+    "url": "/cu-truck-simulator/static/js/main.d72621db.chunk.js"
   },
   {
     "revision": "f35c783db809f5a0848e",
